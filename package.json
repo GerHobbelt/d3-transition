@@ -29,10 +29,10 @@
     "postpublish": "VERSION=`node -e 'console.log(require(\"./package.json\").version)'`; git push && git push --tags && cd ../d3.github.com && git pull && cp ../d3-transition/build/d3-transition.js d3-transition.v1.js && cp ../d3-transition/build/d3-transition.min.js d3-transition.v1.min.js && git add d3-transition.v1.js d3-transition.v1.min.js && git commit -m \"d3-transition ${VERSION}\" && git push && cd - && zip -j build/d3-transition.zip -- LICENSE README.md build/d3-transition.js build/d3-transition.min.js"
   },
   "dependencies": {
-    "d3-color": "1",
+    "d3-color": "3.0.0",
     "d3-dispatch": "1",
     "d3-ease": "1",
-    "d3-interpolate": "1",
+    "d3-interpolate": "3.0.0",
     "d3-selection": "1",
     "d3-timer": "1"
   },
